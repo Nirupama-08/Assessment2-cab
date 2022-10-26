@@ -1,0 +1,53 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px
+
+}
+.container{
+    padding: 20px;
+    width:500px;
+    height: 230px;
+    background-color:orange ;
+    margin:150px 0px 40px 400px;
+    color:blueviolet;
+    
+}
+
+
+.container1{
+    padding: 59px;
+    width:200px;
+    height: 250px;
+    background-color:blueviolet ;
+    color: orange;
+    font-size: large;
+    margin:150px 100px 100px 400px;
+    
+   
+}
+.container2{
+    background-image: url(https://img.freepik.com/free-vector/cab-online-ordering-process-hands-passenger-using-taxi-service-application-cell-dispatcher-headset-taking-order-mobile-app-taxicab-city-transport-concept_74855-13019.jpg?w=2000);
+    background-size: 65%,70%;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    align-items: center;
+     display: flex;
+}
+.container4{
+    padding: 50px;
+    width:500px;
+    height: 300px;
+    background-color:orange;
+    color:blueviolet;
+    font-size: medium;
+    margin:150px 100px 100px 400px;
+}
+.container5{
+    padding: 59px;
+    width:250px;
+    height: 250px;
+    background-color:blueviolet ;
+    color: orange;
+    font-size: medium;
+    margin:150px 100px 100px 400px;
+}

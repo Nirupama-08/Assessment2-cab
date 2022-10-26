@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Print
+        </title>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body >
+    
+       <h2 style="color:blueviolet"><center>SUBMITTED DETAILS:</center></h2>
+       <center><input style=" padding:20px;background-color:blueviolet ;border-radius: 20px; ;" type="button" value="show Data" onclick="showData()">
+       
+       <script>
+             function showData(){
+                var submittedData = JSON.parse(localStorage.getItem('formData'));
+                console.log(submittedData.firstName);
+                console.log(submittedData.lastName);
+                console.log(submittedData.address);
+                
+                
+
+            }
+       </script>
+       </center>
+    </br>
+    
+       <center>
+        <a style="color: blueviolet;font-size:30px;" href ="Payment.html">Payment</a></li>
+       </center>
+       
+    
+       
+    </body>
+    <style>
+        body
+        { background-image: url(https://www.serverless360.com/wp-content/uploads/2019/09/Business-Activity-Monitoring-in-Serverless360-Cab-booking-Management-Application.png);
+        background-size: 100%,100%;
+        background-repeat: no-repeat}
+    </style>
+</html>

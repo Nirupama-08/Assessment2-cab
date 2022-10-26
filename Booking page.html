@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <b><h1><center>BOOKING CAB</center></h1></b>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <form action="print .html" method="POST">
+    
+
+    
+            <center>
+                <table>
+                    <tr>
+                        <td>
+                        <label for ="title"> Title<label>
+                        </td>
+                        <td>
+                            <select id="title" name="title">
+                                <option value ="1" >Mr.</option>
+                                <option value ="2" >Mrs.</option>
+                                <option value ="3" >Ms.</option>
+                            
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="firstName"> First name:</label> 
+                        </td>
+                        <td>
+                            <input type="text" id="firstName" name="firstName" placeholder="Your First Name"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lastName"> Last name:</label> 
+                        </td>
+                        <td>
+                            <input type="text" id="lastName" name="lastName" placeholder="Your last Name"/>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>   
+                            <label for="address"> Address:</label> 
+                        </td>
+                        <td>
+                            <textarea id="address" name="address" placeholder="Your address", row ="10" cols="20"></textarea>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>   
+                            <label for="date"> Date of Birth:</label> 
+                        </td>
+                        <td> 
+                             <input type="date" id="data" name="date" placeholder="DD-MM-YYYY"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>   
+                            <label for="Mobile"> Mobile:</label> 
+                        </td> 
+    
+                         <td> 
+                            <input type="Mobile" id="Mobile" name="Mobile" placeholder="Mobile Number"/>
+                        </td> 
+    
+                    </tr>
+                    <tr>
+                        <td>   
+                            <label for="Gender"> Gender:</label> 
+                        </td> 
+                        <td>
+                            <input type="radio" id="male" name="Gender" value="1"/>Male
+                            <input type="radio" id="Female" name="Gender" valuer="2"/>Female
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>   
+                            <label for="Email"> Email:</label> 
+                        </td>
+                        <td> 
+                            <input type="Email" id="Email" name="Email" placeholder="abc@email.com"/>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Pickuppoint"> Pickup point:</label> 
+                        </td>
+                        <td>
+                            <input type="text" id="Pickuppoint" name="Pickuppoint" placeholder="Pickup point"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Destinationpoint"> Destination Point:</label> 
+                        </td>
+                        <td>
+                            <input type="text" id="DestinationPoint" name="DestinationPoint" placeholder="Destination Point"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>   
+                            <label for="Can we Contact you"> Can we contact you?</label> 
+                        </td> 
+                        <td>
+                            <input type="radio" id="Yes" name="contact" value="1"/>Yes
+                            <input type="radio" id="No" name="contact" valuer="2"/>No
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>   
+                            <label for="Communication Perference">Communication Perference:</label> 
+                        </td> 
+                        <td>
+                            <input type="Checkbox" id="Email" name="comm" value="1"/>Email
+                            <input type="Checkbox" id="SMS" name="comm" valuer="2"/>SMS
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="Checkbox" id="con" name="con" value="1"/>I agree to the <span style="Color:blue"> terms and conditions</span> the website.
+            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" onclick="saveData()" id="Submit" name="Submit" value="SUBMIT"/>
+                        </td>
+                        <td>
+                            <input type="Button" id="Reset" name="Reset" value="RESET"/>
+                        </td>
+                    
+                </table>
+            </center>
+        </form>
+        <script>
+            function saveData(){
+                debugger
+                var firstName= document.getElementById('firstName').value;
+                var lastName= document.getElementById('lastName').value;
+                var address= document.getElementById('address').value;
+               
+                
+                //alert('First name '+firstName);
+    
+            var formData = {
+                firstName,
+                lastName,
+                address,
+               
+            }
+                
+              console.log(formData);
+            
+            localStorage.setItem('formData',JSON.stringify(formData));
+        }
+        
+        </script>
+    </body>
+    <style>
+        body
+        { background-image: url(https://www.serverless360.com/wp-content/uploads/2019/09/Business-Activity-Monitoring-in-Serverless360-Cab-booking-Management-Application.png);
+        background-size: 100%,100%;
+        background-repeat: no-repeat}
+    </style>
+</html>
